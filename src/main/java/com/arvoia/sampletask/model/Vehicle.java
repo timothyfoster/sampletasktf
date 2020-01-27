@@ -34,7 +34,8 @@ public class Vehicle implements Comparable<Vehicle> {
    * @param basePrice the vehicle's base price.
    */
   @JsonCreator
-  public Vehicle(@JsonProperty("brand") String brand, @JsonProperty("category") String category, @JsonProperty("basePrice") Double basePrice) {
+  public Vehicle(@JsonProperty("brand") String brand, @JsonProperty("category") String category,
+                 @JsonProperty("basePrice") Double basePrice) {
     super();
     this.brand = brand;
     this.category = category;

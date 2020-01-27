@@ -41,7 +41,8 @@ public class VehicleSearchResult {
    * @param vehicles the list of available vehicles returned from the search interface.
    */
   @JsonCreator
-  public VehicleSearchResult(@JsonProperty("error") VehicleSearchError error, @JsonProperty("offer") List<Vehicle> vehicles) {
+  public VehicleSearchResult(@JsonProperty("error") VehicleSearchError error,
+                             @JsonProperty("offer") List<Vehicle> vehicles) {
     super();
     offer = new VehicleOffer(vehicles);
     setError(error);
@@ -57,7 +58,7 @@ public class VehicleSearchResult {
   }
 
   /**
-   * Will set result is to "error" and nullify the timestamp if an error is present.
+   * Will set result to "error" and nullify the timestamp if an error is present.
    *
    * @param error an instance of {@link VehicleSearchError} containing the error code and description.
    */
