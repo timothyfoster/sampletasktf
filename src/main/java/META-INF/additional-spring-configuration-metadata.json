@@ -1,5 +1,9 @@
-{"properties": [{
-  "name": "vendor.url",
-  "type": "java.lang.String",
-  "description": "URL of vendor service endpoint"
-}]}
+{
+  "properties": [
+    {
+      "name": "vendor.url",
+      "type": "java.lang.String",
+      "description": "URL of vendor service endpoint"
+    }
+  ]
+}
